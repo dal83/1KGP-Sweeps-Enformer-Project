@@ -4,16 +4,16 @@
 
 ## Setting up environment
 
-1. `**ssh` into your YCRC McCleary cluster account**
-2. **Set up a conda environment for your project**
+1. `ssh` into your YCRC McCleary cluster account
+2. Set up a conda environment for your project
     - [https://docs.ycrc.yale.edu/clusters-at-yale/guides/conda/](https://docs.ycrc.yale.edu/clusters-at-yale/guides/conda/)
     - Recommend setting up environment with `python`, `biopython`, `numpy`, `samtools`, `bcftools`, `tabix`, `r`, `rstudio-desktop`, `seaborn` , `pandas`, `matplotlib`, `jupyter`, `cudatoolkit=11.8.0`
 
 ## Retrieving FASTA sequences
 
-1. **Download indexed VCF data (run a slurm job using `wget` and `sbatch`)**
+1. **Download indexed VCF data (run a slurm job using `wget` and `sbatch`)
     - I used the high coverage data from 1KGP: [http://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/1000G_2504_high_coverage/working/20220422_3202_phased_SNV_INDEL_SV/](http://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/1000G_2504_high_coverage/working/20220422_3202_phased_SNV_INDEL_SV/)
-2. `**tabix` the region of interest: `tabix -h [.vcf.gz file] [chromosome and sequence range] >> [location for .vcf file]`**
+2. `tabix` the region of interest: `tabix -h [.vcf.gz file] [chromosome and sequence range] >> [location for .vcf file]`**
     - eg. `tabix -h [http://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/1000G_2504_high_coverage/working/20220422_3202_phased_SNV_INDEL_SV/1kGP_high_coverage_Illumina.chr2.filtered.SNV_INDEL_SV_phased_panel.vcf.gz](http://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/1000G_2504_high_coverage/working/20220422_3202_phased_SNV_INDEL_SV/1kGP_high_coverage_Illumina.chr2.filtered.SNV_INDEL_SV_phased_panel.vcf.gz) chr2:134851076-136851076 >> ../complete_vcf_high_coverage/high_cov_2Mb_LCT_region.vcf`
 3. **Download reference fasta file from UCSC (should be in format `chr#.fa.gz`)**
     1. Download from: [https://hgdownload.soe.ucsc.edu/goldenPath/hg38/chromosomes/](https://hgdownload.soe.ucsc.edu/goldenPath/hg38/chromosomes/)
