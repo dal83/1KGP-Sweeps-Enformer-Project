@@ -111,7 +111,6 @@
 
 Here are some examples of heatmaps I created with subsets of the normalized prediction data:
 
-![*Enformer_Subset_200_700_Alt_Ref.pdf.* Red = alt allele, black = ref allele.]
 (<img width="897" alt="Screen_Shot_2023-07-28_at_3 58 09_PM" src="https://github.com/dal83/1KGP-Sweeps-Enformer-Project/assets/126291855/ad169182-6a45-4ffb-bacf-8dea2bd2a8cb">)
 
 *Enformer_Subset_200_700_Alt_Ref.pdf.* Red = alt allele, black = ref allele.
