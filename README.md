@@ -71,7 +71,7 @@
     - More info: [https://docs.ycrc.yale.edu/clusters-at-yale/guides/gpus-cuda/](https://docs.ycrc.yale.edu/clusters-at-yale/guides/gpus-cuda/)
 4. `pip install` or `conda install` remaining packages (listed in the Enformer Python script).
     - All my dependencies if you have trouble:
-        - [Enformer Dependencies]([https://www.notion.so/Enformer-Dependencies-711842e61c2b4d2c86ecaddfa78c5080?pvs=21](https://github.com/dal83/1KGP-Sweeps-Enformer-Project/blob/main/Enformer%20Dependencies)
+        - [Enformer Dependencies](https://github.com/dal83/1KGP-Sweeps-Enformer-Project/blob/main/Enformer%20Dependencies)
     - *Fixing potential cuDNN error:* `conda install cudnn=8.8.0`
     - *Fixing potential “Start cannot spawn child process” error:* `conda install -c nvidia cuda-nvcc`
 5. Modify Enformer script
